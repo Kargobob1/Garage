@@ -1,0 +1,8 @@
+.parking-space { width: 80px; height: 80px; border-radius: 6px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; color: white; position: relative; }
+.parking-space:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.parking-space.repark { background-color: var(--repark-color); }
+.parking-space.rented { background-color: var(--rented-color); }
+.parking-space.free { background-color: var(--free-color); }
+.space-number { font-size: 16px; font-weight: 600; margin-bottom: 5px; }
+.space-status { font-size: 12px; font-weight: 500; opacity: 0.9; }
+@media (max-width:768px){ .parking-space { width: 70px; height: 70px; } .space-number { font-size: 14px; } .space-status { font-size: 10px; } }

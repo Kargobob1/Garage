@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --repark-color: #3498db;
+  --rented-color: #e74c3c;
+  --free-color: #2ecc71;
+  --light-gray: #f5f5f5;
+  --border-color: #ddd;
+  --text-color: #333;
+  --text-light: #666;
+  --text-white: #fff;
+  --danger-color: #e74c3c;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); background-color: #f9f9f9; }
+.app-container { min-height: 100vh; display: flex; flex-direction: column; }
+a { text-decoration: none; color: var(--primary-color); }
+button { cursor: pointer; font-family: inherit; }
+.button { display: inline-block; padding: 10px 20px; border-radius: 4px; border: none; font-weight: 500; font-size: 16px; transition: background-color 0.2s, transform 0.1s; }
+.button:hover { opacity: 0.9; transform: translateY(-1px); }
+.button:active { transform: translateY(0); }
+.button.primary { background-color: var(--primary-color); color: white; }
+.button.secondary { background-color: var(--secondary-color); color: white; }
+.button.danger { background-color: var(--danger-color); color: white; }
+.loading { display: flex; justify-content: center; align-items: center; height: 200px; font-size: 18px; color: var(--text-light); }
+.error-message { color: var(--danger-color); padding: 10px; margin: 10px 0; border-radius: 4px; background-color: rgba(231,76,60,0.1); border: 1px solid rgba(231,76,60,0.3); }
+.repark { color: var(--repark-color); }
+.rented { color: var(--rented-color); }
+.free { color: var(--free-color); }
+.status.repark { background-color: var(--repark-color); color: white; padding: 2px 8px; border-radius: 4px; }
+.status.rented { background-color: var(--rented-color); color: white; padding: 2px 8px; border-radius: 4px; }
+.status.free { background-color: var(--free-color); color: white; padding: 2px 8px; border-radius: 4px; }
+@media (max-width:768px){ .button { padding: 8px 16px; font-size: 14px; } }

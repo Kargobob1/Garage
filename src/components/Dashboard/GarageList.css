@@ -1,0 +1,18 @@
+.garage-list { margin-top: 20px; }
+.garage-list h2 { font-size: 20px; font-weight: 500; margin-bottom: 20px; color: var(--secondary-color); }
+.no-garages { text-align: center; padding: 40px; color: var(--text-light); background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.garage-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 20px; }
+.garage-card { background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); padding: 20px; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; color: var(--text-color); position: relative; overflow: hidden; }
+.garage-card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.garage-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 5px; color: var(--secondary-color); }
+.garage-address { color: var(--text-light); font-size: 14px; margin-bottom: 15px; }
+.garage-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 15px; }
+.stat-item { display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 4px; background-color: var(--light-gray); }
+.stat-label { font-size: 12px; color: var(--text-light); margin-bottom: 5px; }
+.stat-value { font-size: 18px; font-weight: 600; }
+.stat-item.repark .stat-value { color: var(--repark-color); }
+.stat-item.rented .stat-value { color: var(--rented-color); }
+.stat-item.free .stat-value { color: var(--free-color); }
+.upcoming-changes { margin-top: 15px; min-height: 25px; }
+.pending-changes-badge { display: inline-block; background-color: var(--warning-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+@media (max-width:768px){ .garage-grid { grid-template-columns: 1fr; } }

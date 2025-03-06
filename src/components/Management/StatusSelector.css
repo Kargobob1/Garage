@@ -1,0 +1,10 @@
+.status-selector-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 1000; padding: 20px; }
+.status-selector { background-color: white; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); padding: 30px; width: 100%; max-width: 500px; position: relative; }
+.status-selector h3 { font-size: 20px; font-weight: 500; margin-bottom: 20px; color: var(--secondary-color); }
+.current-status { margin-bottom: 20px; padding: 10px; background-color: var(--light-gray); border-radius: 4px; }
+.current-status .repark { color: var(--repark-color); font-weight: 600; }
+.current-status .rented { color: var(--rented-color); font-weight: 600; }
+.current-status .free { color: var(--free-color); font-weight: 600; }
+.form-group { margin-bottom: 25px; }
+.form-group label { display: block; margin-bottom: 10px; font-weight: 500; }
+.status-options { display: flex; }

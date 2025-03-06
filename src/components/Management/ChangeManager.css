@@ -1,0 +1,21 @@
+.change-manager-container { display: flex; flex-direction: column; min-height: 100vh; }
+.change-manager-header { background-color: var(--secondary-color); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.change-manager-header h1 { font-size: 22px; font-weight: 500; }
+.change-manager-content { flex-grow: 1; padding: 30px; max-width: 1400px; margin: 0 auto; width: 100%; }
+.filters { display: flex; gap: 10px; margin-bottom: 30px; }
+.filter-button { padding: 8px 16px; border: 1px solid var(--border-color); background-color: white; border-radius: 4px; font-size: 14px; color: var(--text-color); transition: all 0.2s; }
+.filter-button:hover { background-color: var(--light-gray); }
+.filter-button.active { background-color: var(--secondary-color); color: white; border-color: var(--secondary-color); }
+.filter-button.repark.active { background-color: var(--repark-color); border-color: var(--repark-color); }
+.filter-button.rented.active { background-color: var(--rented-color); border-color: var(--rented-color); }
+.filter-button.free.active { background-color: var(--free-color); border-color: var(--free-color); }
+.no-changes { text-align: center; padding: 60px 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); color: var(--text-light); font-size: 16px; }
+.changes-by-garage { display: flex; flex-direction: column; gap: 40px; }
+.garage-changes { background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); padding: 30px; }
+.garage-changes h2 { font-size: 20px; font-weight: 500; margin-bottom: 20px; color: var(--secondary-color); }
+.actions { display: flex; gap: 10px; }
+.approve-button { background-color: var(--success-color); color: white; border: none; border-radius: 4px; padding: 6px 12px; font-size: 14px; transition: background-color 0.2s; }
+.approve-button:hover { background-color: #27ae60; }
+.reject-button { background-color: var(--danger-color); color: white; border: none; border-radius: 4px; padding: 6px 12px; font-size: 14px; transition: background-color 0.2s; }
+.reject-button:hover { background-color: #c0392b; }
+@media (max-width:768px){ .change-manager-header { padding: 15px; } .change-manager-content { padding: 20px 15px; } .filters { overflow-x: auto; padding-bottom: 10px; } .filter-button { white-space: nowrap; } .garage-changes { padding: 20px 15px; } .changes-table { display: block; overflow-x: auto; } .actions { flex-direction: column; gap: 5px; } }
